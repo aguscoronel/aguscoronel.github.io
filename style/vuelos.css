@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Robot', sans-serif;
+}
+
+
+/* Header */
+
+
+header::before{
+  content: "";
+  display: block;
+  margin-bottom: 80px;
+}
+
+
+nav{
+  width: 100%;
+  height: 80px;
+  background: #2aca95;
+  border-bottom: 1px solid transparent;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: ease-in-out 0.5s;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.nav .logo{
+  height: 80px;
+}
+
+.nav .logo img{
+  height: 100%;
+  vertical-align: top;
+}
+
+.enlaces-header {
+  font-weight: 300;
+  transition: ease-in-out 0.5s;
+}
+
+.nav .enlaces-header a{
+  color: #094acc;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hamburguer {
+  width: 80px;
+  height: 80px;
+  display: none;
+  text-align: center;
+  z-index: 100;
+  cursor: pointer;
+  transition: color 0.5 ease-in;
+} 
+
+.hamburguer > i{
+  font-size: 25px;
+  line-height: 80px;
+} 
+
+.contenido-header {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenido-header > img {
+  width: 550px;
+  animation: ease-in animat 1s;
+}
+
+@keyframes animat {
+  0%{
+      transform: scale(0);
+  }100%{
+      transform: scale(1);
+  }
+}
+
+.textos-header{
+  margin: 0 0 0 30px;
+}
+
+.contenido-header p{
+  font-weight: 100;
+  margin-top: 14px;
+  color: #5d6678;
+}
+
+
+.contenido-header a{
+  margin: 28px 0 0 0;
+  width: 130px;
+  display: inline-block;
+  background: #1FDE82;
+  text-align: center;
+  color: #fff;
+  padding: 12px 0;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 0 8px 32px rgba(31,222 , 130, .46);
+}
+
+.titulo{
+  font-size: 50px;
+}
+
+
+/* menu de vuelos*/
+
+.contenedor1{
+  margin-top: 20px;
+  width: auto;
+  height: auto;
+  padding: 50px;
+  background-color: ghostwhite;
+  text-align: center;
+
+}
+
+
+.vuelos{
+  width: 1000px;
+  height: 1000px;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  background-color: ghostwhite;
+}
+
+.contenedortickets {
+  background-color: #2aca95;
+  margin: 100px;
+  font-size: 20px;
+  border-radius: 10px;
+  
+}
+
+.contenedortickets:hover{
+  box-shadow: 0 8px 32px rgba(31,222 , 130, .46);
+}
+
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+/*caja 1 de los tickets*/
+
+
+.wrapper .logoTickets{
+  height: 80px;
+}
+
+.wrapper .logoTickets img{
+  height: 70%;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/*caja 2 de los tickets*/
+.wrapper .caja2 {
+  font-size: small ;
+  padding-top: 20px;
+}
+
+/*caja 3 de los tickets*/
+.wrapper .caja3 {
+  font-size: small ;
+  padding-top: 20px;
+}
+
+/*caja 4 de los tickets*/
+
+.wrapper .caja4 {
+  padding: 20px;
+}
+
+/*caja 5 de los tickets*/
+
+
+.wrapper .caja5 button{
+  border-radius: 24px;
+  width: 110px;
+  height: 50px;
+  margin: 25px;
+}
